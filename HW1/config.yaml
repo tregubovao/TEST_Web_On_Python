@@ -1,0 +1,8 @@
+username: 'KatrinzZZ'
+passwd: '284ac1db73'
+url: 'https://test-stand.gb.ru/gateway/login'
+
+url_post: https://test-stand.gb.ru/api/posts
+title: 'news of city'
+description: 'Super fresh news'
+content: 'Its fresh news about something'
