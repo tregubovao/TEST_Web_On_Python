@@ -1,0 +1,13 @@
+address: https://test-stand.gb.ru
+browser: chrome
+sleep_time: 1
+
+login: "GB202305709de6"
+passwd: "1a015be50f"
+
+login2: "John777"
+passwd2: "9890279920"
+
+title: "Supernews"
+description: "What about John"
+content: "This very interesting new about new cinema"
