@@ -1,0 +1,13 @@
+address: https://test-stand.gb.ru
+address_2: https://www.google.ru/
+browser: chrome
+sleep_time: 5
+
+login: "GB202305709de6" 
+pass: "1a015be50f"
+
+name_in_contact_us: 'John'
+e-mail: 'john@mail.ru'
+message: 'Hello, word!'
+alert_message: "Form successfully submitted"
+
