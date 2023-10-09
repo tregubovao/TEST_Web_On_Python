@@ -33,5 +33,3 @@ class BasePage:
         self.driver.close()
 
 
-
-
