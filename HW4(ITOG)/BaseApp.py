@@ -1,11 +1,16 @@
 from selenium.webdriver.support.wait import WebDriverWait 
 from selenium.webdriver.support import expected_conditions as EC
 import logging
+import yaml
+
+with open("testdata.yaml") as f:
+    testdata = yaml.safe_load(f)
+    base_url = testdata['address']
 
 class BasePage:
     def __init__(self, driver):
         self.driver = driver
-        self.base_url = "https://test-stand.gb.ru"
+        self.base_url = base_url
 
     def find_element(self, locator, time=10):
         try:
@@ -20,7 +25,7 @@ class BasePage:
         element = self.find_element(locator)
         if element: # элемент будет преобразован к логическому типу . И если он будет не None, False - элемент найден.
             return element.value_of_css_property(property)
-        logging.error(f"Property {property} not found in element with locator {locator}")
+        logging.error(f"Proprty {property} not found in element with locator {locator}")
         return None
     
     def go_to_site(self):
@@ -38,6 +43,8 @@ class BasePage:
         except:
             logging.exception("Exception with alert")
             return None
+        
+        
         
         
         
